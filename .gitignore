@@ -54,6 +54,6 @@ temp/
 
 .svn
 
-library/scss-amber/.sass-cache/
+library/scss/.sass-cache/
 
 node_modules/
