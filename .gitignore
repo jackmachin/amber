@@ -53,3 +53,5 @@ temp/
 .Trashes
 
 .svn
+
+library/scss-amber/.sass-cache/
