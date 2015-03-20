@@ -1,3 +1,5 @@
+<?php/*Template Name: Splash*/?>
+<html>
 <!doctype html>
 
 <!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -62,43 +64,11 @@
 
 
 	</head>
-
-	<body <?php body_class(); ?>>
-
-		<div id="container">
-
-			<header class="header" role="banner">
-
-				<div id="inner-header" class="wrap clearfix">
-
-					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-
-					<div id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="/wp-content/themes/amber/library/images/logo.png"></a></div>
-
-					<!-- if you'd like to use the site description you can un-comment it below -->
-					<?php // bloginfo('description'); ?>
-
-					<nav role="navigation">
-						<?php if (is_page_template ('page-adviser.php')) {
-
-						bones_adviser_nav(); }
-
-						elseif (is_page_template ('page-member.php')) {
-
-							if (is_user_logged_in()) { bones_member_nav ();}
-
-							else {bones_main_nav();}
-
-						}
-
-						else {
-
-						bones_main_nav(); }
-
-						?>
-
-					</nav>
-
-				</div> <!-- end #inner-header -->
-
-			</header> <!-- end header -->
+<body class="splash">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<?php the_content (); ?>
+  <?php endwhile; else: ?>
+<?php endif; ?>
+	<?php wp_footer(); ?>
+	</body>
+	</html>
