@@ -450,6 +450,10 @@ HEADER STYLES
   #logo img {
     width: 400px; }
 
+.header-buttons {
+  float: right;
+  clear: both; }
+
 /*********************
 NAVIGATION STYLES
 *********************/

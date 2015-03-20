@@ -1353,6 +1353,9 @@ HEADER STYLES
     width: 400px; }
     #logo img {
       width: 400px; }
+  .header-buttons {
+    float: right;
+    clear: both; }
   /*********************
 NAVIGATION STYLES
 *********************/
