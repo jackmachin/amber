@@ -73,7 +73,7 @@
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
                     <div class="clearfix">
-                        <div id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="/wp-content/themes/amber/library/images/logo.png"></a></div>
+                        <div id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="/wp-content/themes/amber/library/images/logo.png" width="400" height="129"></a></div>
 
                         <div class="header-buttons">
                             <a class="button" href="http://www.amberwrap.co.uk">SEI Portal</a>
