@@ -72,14 +72,13 @@
 				<div id="inner-header" class="wrap clearfix">
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
+                    <div class="clearfix">
+                        <div id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="/wp-content/themes/amber/library/images/logo.png"></a></div>
 
-					<div id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="/wp-content/themes/amber/library/images/logo.png"></a></div>
+                        <div class="header-buttons">
+                            <a class="button" href="http://www.amberwrap.co.uk">SEI Portal</a>
+                        </div>
 
-					<!-- if you'd like to use the site description you can un-comment it below -->
-					<?php // bloginfo('description'); ?>
-
-                    <div class="header-buttons">
-                        <a class="button" href="http://www.amberwrap.co.uk">SEI Portal</a>
                     </div>
 
 					<nav role="navigation">
