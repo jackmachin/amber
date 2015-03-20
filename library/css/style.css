@@ -1349,6 +1349,9 @@ LAYOUT & GRID STYLES
   /*********************
 HEADER STYLES
 *********************/
+  #logo {
+    width: 400px;
+    float: left; }
   .header-buttons {
     float: right;
     clear: both; }
