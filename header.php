@@ -78,6 +78,10 @@
 					<!-- if you'd like to use the site description you can un-comment it below -->
 					<?php // bloginfo('description'); ?>
 
+                    <div class="header-buttons">
+                        <a class="button" href="http://www.amberwrap.co.uk">SEI Portal</a>
+                    </div>
+
 					<nav role="navigation">
 						<?php if (is_page_template ('page-adviser.php')) {
 
@@ -98,6 +102,8 @@
 						?>
 
 					</nav>
+
+                    <a
 
 				</div> <!-- end #inner-header -->
 
