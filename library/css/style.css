@@ -1354,7 +1354,7 @@ HEADER STYLES
     float: left; }
   .header-buttons {
     float: right;
-    clear: both; }
+    padding: 1.5em; }
   /*********************
 NAVIGATION STYLES
 *********************/
