@@ -34,7 +34,17 @@
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
 
-		<!-- drop Google Analytics Here -->		<script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-42236979-1', 'amberfinancial.eu');  ga('send', 'pageview');</script>
+		<!-- drop Google Analytics Here -->
+            <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-42236979-1', 'auto');
+              ga('send', 'pageview');
+
+            </script>
 		<!-- end analytics -->
 
 		<!--
@@ -59,8 +69,6 @@
 */
 
 -->
-
-
 	</head>
 
 	<body <?php body_class(); ?>>
@@ -83,26 +91,27 @@
 
 					<nav role="navigation">
 						<?php if (is_page_template ('page-adviser.php')) {
-
-						bones_adviser_nav(); }
+                            bones_adviser_nav();
+                        }
 
 						elseif (is_page_template ('page-member.php')) {
 
-							if (is_user_logged_in()) { bones_member_nav ();}
+							if (is_user_logged_in()) {
+                                bones_member_nav ();
+                            }
 
-							else {bones_main_nav();}
-
+							else {
+                                bones_main_nav();
+                            }
 						}
 
 						else {
+						  bones_main_nav();
+                        }
 
-						bones_main_nav(); }
-
-						?>
+                        ?>
 
 					</nav>
-
-                    <a
 
 				</div> <!-- end #inner-header -->
 
