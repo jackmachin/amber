@@ -94,24 +94,24 @@
                     </div>
 
 					<nav role="navigation">
-						<?php //if (is_page_template ('page-adviser.php')) {
+						<?php if (is_page_template ('page-adviser.php')) {
                             //bones_adviser_nav();
-                        //}
+                        }
 
-						//elseif (is_page_template ('page-member.php')) {
+						elseif (is_page_template ('page-member.php')) {
 
-						//	if (is_user_logged_in()) {
+							if (is_user_logged_in()) {
                                 bones_member_nav ();
                             }
 
-						//	else {
+							else {
                                 bones_main_nav();
                             }
 						}
 
-						//else {
+						else {
 						  bones_main_nav();
-                        //}
+                        }
 
                         ?>
 
